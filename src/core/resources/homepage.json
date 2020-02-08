@@ -1,7 +1,7 @@
 {
   "sectionData": {
       "homePage": {
-        "sliderItems": [
+        "highlightItems": [
           {
             "media_url": "galaxy_s10_banner"
           },
@@ -16,7 +16,101 @@
           },
           {
             "media_url": "xiaomi_mi8_banner"
-          }]
-        }
+          }],
+          "offers": [
+            {
+              "media_url":    "galaxy_s10_banner",
+              "price":        "U$ 650",
+              "description":  "Samsung Galaxy S10"
+            },
+            {
+              "media_url":    "apple_banner",
+              "price":        "U$ 450",
+              "description":  "Apple Equipment"
+            },
+            {
+              "media_url":    "xiaomi_mi9_banner",
+              "price":        "U$ 650.99",
+              "description":  "Xiaomi Mi9"
+            },
+            {
+              "media_url": "galaxy_s9_banner",
+              "price":        "U$ 549.29",
+              "description":  "Samsung Galaxy S9"
+            },
+            {
+              "media_url":    "galaxy_s10_banner",
+              "price":        "U$ 650",
+              "description":  "Samsung Galaxy S10"
+            },
+            {
+              "media_url":    "apple_banner",
+              "price":        "U$ 450",
+              "description":  "Apple Equipment"
+            },
+            {
+              "media_url":    "xiaomi_mi9_banner",
+              "price":        "U$ 650.99",
+              "description":  "Xiaomi Mi9"
+            },
+            {
+              "media_url": "galaxy_s9_banner",
+              "price":        "U$ 549.29",
+              "description":  "Samsung Galaxy S9"
+            } 
+          ],
+          "categories": [
+            {
+              "media_url":  "outlet",
+              "name":       "OUTLET"
+            },
+            {
+              "media_url":  "tv_audio_home",
+              "name":       "TV / AUDIO"
+            },
+            {
+              "media_url":  "diversos",
+              "name":       "DIVERSOS"
+            },
+            {
+              "media_url":  "samsung",
+              "name":       "SAMSUNG"
+            },
+            {
+              "media_url":  "apple",
+              "name":       "APPLE"
+            },
+            {
+              "media_url":  "gosat",
+              "name":       "GOSAT"
+            }
+          ],
+          "phones": [
+            {
+              "media_url":  "iphone11",
+              "name":       "IPHONE 11"
+            },
+            {
+              "media_url":  "xiaomi",
+              "name":       "XIAOMI"
+            },
+            {
+              "media_url":  "samsung",
+              "name":       "SAMSUNG"
+            },
+            {
+              "media_url":  "motorola",
+              "name":       "MOTOROLA"
+            },
+            {
+              "media_url":  "huawei",
+              "name":       "HUAWEI"
+            },
+            {
+              "media_url":  "lenovo",
+              "name":       "LENOVO"
+            }
+          ]
+      }
   }
 }

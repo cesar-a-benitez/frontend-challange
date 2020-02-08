@@ -19,5 +19,14 @@ Steps to initialize the project using Linus Operating System:
 - [ ] ***create order*** - create a post request for an endpoint with name, email, whatsapp and products
 
 ***
-## Project Structure pattern:
+## Done:
+### Project Structure pattern:
 The chosen structure pattern was based on *modular components*, thinked to be easy to change/redesign and use/reuse each component for achieving the desired interface.
+<br/><br/>
+
+### Consume of Static Json:
+The application is consuming two static **JSON**, one for the bottom links, at the page footer, and one for showing content at homepage.
+<br/><br/>
+
+### Theme Color:
+To change from the default **Dark Theme**, you have to append `/0` or `/light` to the *homepage url*.
