@@ -3,6 +3,7 @@ import React from 'react';
 import { AppBar, Button, makeStyles, Typography, Grid } from '@material-ui/core';
 
 // Icons import
+import GroupIcon from '@material-ui/icons/Group';
 const categories        = require('./icons/shape.png');
 const games             = require('./icons/controller-classic.png');
 const phone             = require('./icons/phone.png');
@@ -65,6 +66,11 @@ export default function NavBar(){
             <Grid container spacing={0} direction='row' justify='center' alignItems='center' >
                 <React.Fragment>
                     {mapButtons}
+                    <Grid item xs={"auto"} key={"vendedores"}>
+                        <Button className={classes.button} key={"vendedores"} size='large'><GroupIcon />
+                            <Typography variant="caption" className={classes.buttonText}>Vendedores</Typography>
+                        </Button>
+                    </Grid>
                 </React.Fragment>
             </Grid>
         </AppBar>
