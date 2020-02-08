@@ -1,5 +1,6 @@
 // Import Dependencies and Libraries
 import React from 'react';
+import { useHistory } from 'react-router-dom';
 import { AppBar, Button, makeStyles, Typography, Grid } from '@material-ui/core';
 
 // Icons import
@@ -39,6 +40,16 @@ const btns = [  'Categorias',
                 'Esporte e Lazer',
                 'Saúde e Beleza']; 
 
+const links = [ '/categories',
+                '/games',
+                '/cellphones-tablets',
+                '/informatics',
+                '/receivers',
+                '/eletronics',
+                '/eletrodomestics',
+                '/sports',
+                '/health'];
+
 const icons = [ categories,
                 games,
                 phone,
@@ -52,11 +63,19 @@ const icons = [ categories,
 export default function NavBar(){
 
     const classes = useStyles();
+    let history = useHistory();
+
+    function redirect(path) {
+        history.push(path);
+    }
 
     const mapButtons = 
         btns.map((button, index) => 
             <Grid item xs={"auto"} key={index}>
-                <Button className={classes.button} key={index} size='large'><img src={icons[index]} className={classes.icons} alt="Fail to load resource"/><Typography variant="caption" className={classes.buttonText}>{button}</Typography></Button>
+                <Button className={classes.button} key={index} size='large' onClick={() => {redirect(links[index])}} >
+                    <img src={icons[index]} className={classes.icons} alt="Fail to load resource"/>
+                    <Typography variant="caption" className={classes.buttonText}>{button}</Typography>
+                </Button>
             </Grid>
         );
     
@@ -67,7 +86,7 @@ export default function NavBar(){
                 <React.Fragment>
                     {mapButtons}
                     <Grid item xs={"auto"} key={"vendedores"}>
-                        <Button className={classes.button} key={"vendedores"} size='large'><GroupIcon />
+                        <Button className={classes.button} key={"vendedores"} size='large' onClick={() => {redirect('/sellers')}} ><GroupIcon />
                             <Typography variant="caption" className={classes.buttonText}>Vendedores</Typography>
                         </Button>
                     </Grid>
@@ -76,3 +95,4 @@ export default function NavBar(){
         </AppBar>
     );
 } 
+

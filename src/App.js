@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import './App.css';
 import './core/resources/css/Page.css';
 import { 
-  Header, Footer, Homepage
+  Header, Footer, Homepage, NotFound
 } from './core/resources/index';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
 
 
 export default class App extends Component {
@@ -14,8 +14,12 @@ export default class App extends Component {
         <Header />
           <div style={{marginTop:128}} >
             <Switch>
-              <Route exact path="/"     component={Homepage} />
-              <Route path="/:id"        component={Homepage} />
+              <Route exact path="/homepage"     component={Homepage} />
+              <Route path="/homepage/:id"       component={Homepage} />
+              <Route exact path="/">
+                <Redirect to="/homepage" />
+              </Route>
+              <Route path="/:page"              component={NotFound} />
             </Switch>
           </div>
         <Footer />

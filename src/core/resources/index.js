@@ -5,9 +5,10 @@ import Stylesheet   from './Layout/BootstrapStylesheet';
 
 // Pages Components
 import Homepage     from './Pages/Homepage';
+import NotFound     from './Pages/NotFound';
 
 // Exports
 export {
     Header, Footer, Stylesheet,
-    Homepage
+    Homepage, NotFound
 };

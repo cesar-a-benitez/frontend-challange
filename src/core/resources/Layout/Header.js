@@ -1,5 +1,6 @@
 // Import Dependencies and Libraries
 import React from 'react';
+import { useHistory } from 'react-router-dom';
 import { AppBar, Toolbar, makeStyles } from '@material-ui/core';
 
 // Import Icons
@@ -31,13 +32,14 @@ const useStyles = makeStyles(theme => ({
 export default function Header() {
 
     const classes = useStyles();
+    let history = useHistory();
 
     return(
         <div>
             <AppBar position="fixed" style={{background: '#3e5e3b', display:'flex', alignItems: 'center', alignContent: 'center', justifyContent: 'center'}}>
                 {/* Toolbar style */}
                 <Toolbar style={{position: 'relative', alignContent: 'center', justifyContent: 'center'}}>
-                    <img src={logo} width='7%' height='7%' onClick={() => {handleLogoClick()}} alt="Fail to load resource" />
+                    <img src={logo} width='7%' height='7%' onClick={() => {history.push('/homepage')}} alt="Fail to load resource" />
                     <DropdownList />
                     <TextSearch />
                     <Quotation />
@@ -50,7 +52,3 @@ export default function Header() {
         </div>
     );
 }
-
-function handleLogoClick() {
-    console.log('logo clicked');
-} 
