@@ -1,32 +1,25 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import './core/resources/css/Page.css';
 import { 
-  Header, Footer, Stylesheet
+  Header, Footer, Homepage
 } from './core/resources/index';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
 
 export default class App extends Component {
   render() {
     return (
-      <div className="App">
+      <Router>
         <Header />
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+          <div style={{marginTop:128}} >
+            <Switch>
+              <Route exact path="/"     component={Homepage} />
+              <Route path="/:id"        component={Homepage} />
+            </Switch>
+          </div>
         <Footer />
-      </div>
+      </Router>
     );
   }
 }

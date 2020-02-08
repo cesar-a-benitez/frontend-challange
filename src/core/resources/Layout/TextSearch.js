@@ -1,9 +1,12 @@
+// Import Dependencies and Libraries
 import React from 'react';
-import { Form, Button, FormControl } from 'react-bootstrap';
 import { InputBase } from '@material-ui/core';
 import { fade, makeStyles } from '@material-ui/core/styles';
+
+// Import Icon
 import SearchIcon from '@material-ui/icons/Search';
 
+// Definition of styles to be used
 const useStyles = makeStyles(theme => ({
     search: {
       position: 'relative',
@@ -37,11 +40,11 @@ const useStyles = makeStyles(theme => ({
     },
     inputInput: {
       fontSize: 20,
-      padding: theme.spacing(2.4, 1, 1, 1),
+      padding: theme.spacing(2.4, 7, 1, 1),
       transition: theme.transitions.create('width'),
       width: '100%',
       [theme.breakpoints.up('md')]: {
-        width: 580,
+        width: 500,
       },
     },
   }));
@@ -52,12 +55,6 @@ export default function TextSearch() {
 
     return(
         <>
-            {/* <Form>
-            <Form inline>
-                    <FormControl type="text" placeholder="O que está procurando?" className="mr-sm-2" size='lg' />
-                    <Button variant="outline-info">Search</Button>
-                </Form>
-            </Form> */}
             <div className={classes.search}>
                 <InputBase
                     placeholder="O que esta procurando?"

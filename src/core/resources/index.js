@@ -3,10 +3,11 @@ import Header       from './Layout/Header';
 import Footer       from './Layout/Footer';
 import Stylesheet   from './Layout/BootstrapStylesheet';
 
-// Other Components
-
+// Pages Components
+import Homepage     from './Pages/Homepage';
 
 // Exports
 export {
-    Header, Footer, Stylesheet
+    Header, Footer, Stylesheet,
+    Homepage
 };

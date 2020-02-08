@@ -1,9 +1,9 @@
-import React from 'react'
-import { Button, Menu, MenuItem, makeStyles, ListItemIcon, ListItemText, withStyles, Typography, TextField } from '@material-ui/core';
-import ListIcon from '@material-ui/icons/List';
-import { Image } from 'react-bootstrap';
+// Import Dependencies and Libraries
+import React    from 'react'
+import { Button, Menu, MenuItem, makeStyles, ListItemIcon, ListItemText, withStyles, Typography } from '@material-ui/core';
 
 // Icons import
+import ListIcon         from '@material-ui/icons/List';
 const categories        = require('./icons/shape-blk.png');
 const games             = require('./icons/controller-classic-blk.png');
 const phone             = require('./icons/phone-blk.png');
@@ -39,6 +39,9 @@ const useStyles = makeStyles(theme => ({
     button: {
         margin: theme.spacing(2),
       },
+    item: {
+        fontSize: 15
+    }
 }));
 
 const StyledMenu = withStyles({
@@ -61,6 +64,7 @@ const StyledMenu = withStyles({
     />
 ));
 
+// Definition of styles to be used
 const StyledMenuItem = withStyles(theme => ({
 root: {
     '&:focus': {
@@ -74,6 +78,7 @@ root: {
 
 export default function DropdownList() {
 
+    // Declaration of constants and states to be used
     const classes = useStyles();
     const [anchorEl, setAnchorEl] = React.useState(null);
 
@@ -85,10 +90,11 @@ export default function DropdownList() {
         setAnchorEl(null);
     };
 
+    // Inflate dropdown list function
     const inflateDropdown = btns.map((item, index) =>
-        <StyledMenuItem>
+        <StyledMenuItem key={index}>
             <ListItemIcon>
-                <Image src={icons[index]} style={{color: 'black'}} />
+                <img src={icons[index]} style={{color: 'black'}} alt="Fail to load resource"/>
             </ListItemIcon>
             <ListItemText primary={item} />
         </StyledMenuItem>

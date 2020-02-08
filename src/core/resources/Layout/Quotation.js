@@ -1,7 +1,11 @@
+// Import Dependencies and Libraries
 import React from 'react';
 import { Box, Typography, makeStyles } from '@material-ui/core';
-import { Image } from 'react-bootstrap';
 
+// Import Icon
+const dollarIcon = require('./icons/dollar-icon.png');
+
+// Definition of Styles to be used
 const defaultProps = {
     borderColor: 'white',
     m: 1,
@@ -24,8 +28,6 @@ const useStyles = makeStyles(theme => ({
     }
 }));
 
-const dollarIcon = require('./icons/dollar-icon.png');
-
 export default function Quotation() {
 
     const classes = useStyles();
@@ -35,7 +37,7 @@ export default function Quotation() {
             <Box display="flex" justifyContent="center" >
                 <Box borderRadius={6}{...defaultProps} />
                 <div className={classes.icon}>
-                    <Image src={dollarIcon} width={30} height={30} styles={{tintColor: '#ffffff', color: '#ffffff'}} />
+                    <img src={dollarIcon} width={30} height={30} alt="Fail to load resource" />
                 </div>
                 <div className={classes.text}>
                     <Typography variant="subtitle2">Cotação</Typography>

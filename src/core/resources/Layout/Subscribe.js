@@ -1,22 +1,19 @@
+// Import Dependencies and Libraries
 import React from 'react';
-import { Box, Typography, InputBase, Container } from '@material-ui/core';
+import { Grid, InputBase } from '@material-ui/core';
 import { fade, makeStyles } from '@material-ui/core/styles';
+
+// Import Icon
 import ThumbUpAltIcon from '@material-ui/icons/ThumbUpAlt';
-import { Col, Row } from 'react-bootstrap';
 
-const defaultProps = {
-    borderColor: 'white',
-    m: 1,
-    border: 0,
-    style: { width: 130, height: 100 },
-  };
-
+// Definition of styles to be used
 const useStyles = makeStyles(theme => ({
     text: {
         position: 'relative',
         color: '#3e5e3b',
-        left: -113,
-        top: 20,
+        textAlign: 'left',
+        left: 0,
+        top: 5,
     },
     icon: {
         position: 'relative',
@@ -32,7 +29,7 @@ const useStyles = makeStyles(theme => ({
           backgroundColor: fade(theme.palette.common.white, 0.85),
         },
         margin: theme.spacing(2),
-        top: 9,
+        top: 6,
         height: 54,
         width: '100%',
         [theme.breakpoints.up('sm')]: {
@@ -57,11 +54,11 @@ const useStyles = makeStyles(theme => ({
       },
       inputInput: {
         fontSize: 20,
-        padding: theme.spacing(2.4, 1, 1, 1),
+        padding: theme.spacing(2.4, 7, 1, 1),
         transition: theme.transitions.create('width'),
         width: '100%',
         [theme.breakpoints.up('md')]: {
-          width: 580,
+          width: 800,
         },
       },
 }));
@@ -71,20 +68,15 @@ export default function Subscribe(){
     const classes = useStyles();
 
     return(
-        <Container>
-            <Row>
-                <Col>
-                    <Box display="flex" justifyContent="center" >
-                        <Box borderRadius={6}{...defaultProps} />
-                        <div className={classes.icon}>
-                        </div>
-                        <div className={classes.text}>
-                            <Typography variant="h6">RECEBA OFERTAS</Typography>
-                            <Typography variant="h6">ESPECIAIS NO SEU EMAIL</Typography>
-                        </div>
-                    </Box>
-                </Col>
-                <Col>
+        <Grid container spacing={1} direction='row' justify='center' alignItems='center'>
+            <React.Fragment>
+                <Grid item xs={2}>
+                    <div className={classes.text}>
+                        <h5><b>RECEBA OFERTAS</b></h5>
+                        <h5><b>ESPECIAIS NO SEU EMAIL</b></h5>
+                    </div>
+                </Grid>
+                <Grid item xs={"auto"}>
                     <div className={classes.search}>
                         <InputBase
                             placeholder="Digite seu email aqui!"
@@ -98,8 +90,8 @@ export default function Subscribe(){
                             <ThumbUpAltIcon />
                         </div>
                     </div>
-                </Col>
-            </Row>
-        </Container>
+                </Grid>
+            </React.Fragment>
+        </Grid>
     );
 }

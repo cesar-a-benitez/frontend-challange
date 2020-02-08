@@ -1,0 +1,183 @@
+{
+    "BottomLinks": 
+        [{
+            "id":       0,
+            "header":   "Serviço ao cliente",
+            "items": [
+                {
+                    "itemId":   0,
+                    "name":     "Minha conta",
+                    "path":     "/account",
+                    "icon":     null
+                },
+                {
+                    "itemId":   1,
+                    "name":     "Lista de desejos",
+                    "path":     "/favorites",
+                    "icon":     null
+                },
+                {
+                    "itemId":   2,
+                    "name":     "Garantia",
+                    "path":     "/warranty",
+                    "icon":     null
+                },
+                {
+                    "itemId":   3,
+                    "name":     "Envio de produtos",
+                    "path":     "/products-shipment",
+                    "icon":     null
+                },
+                {
+                    "itemId":   4,
+                    "name":     "Centro de ajuda",
+                    "path":     "/help-center",
+                    "icon":     null
+                }
+            ]
+        },
+        {
+            "id":       1,
+            "header":   "Conheça-nos",
+            "items": [
+                {
+                    "itemId":   0,
+                    "name":     "Sobre a Atacado Games",
+                    "path":     "/abbout-us",
+                    "icon":     null
+                },
+                {
+                    "itemId":   1,
+                    "name":     "Tour virtual",
+                    "path":     "/virtual-tour",
+                    "icon":     null
+                },
+                {
+                    "itemId":   2,
+                    "name":     "Termos e condições",
+                    "path":     "/terms-conditions",
+                    "icon":     null
+                },
+                {
+                    "itemId":   3,
+                    "name":     "Política de privacidade",
+                    "path":     "/privacy-policy",
+                    "icon":     null
+                },
+                {
+                    "itemId":   4,
+                    "name":     "Fale conosco",
+                    "path":     "/contact-us",
+                    "icon":     null
+                }
+            ]
+        },
+        {
+            "id":       2,
+            "header":   "Programa de Parceiros",
+            "items": [
+                {
+                    "itemId":   0,
+                    "name":     "Seja um influenciador",
+                    "path":     "/become-influencer",
+                    "icon":     null
+                },
+                {
+                    "itemId":   1,
+                    "name":     "Fornecedores",
+                    "path":     "/suppliers",
+                    "icon":     null
+                },
+                {
+                    "itemId":   2,
+                    "name":     "Trabalhe conosco",
+                    "path":     "/work-with-us",
+                    "icon":     null
+                },
+                {
+                    "itemId":   3,
+                    "name":     "Parceiros",
+                    "path":     "/partners",
+                    "icon":     null
+                }
+            ]
+        },
+        {
+            "id":       3,
+            "header":   "Atendimento",
+            "items": [
+                {
+                    "itemId":   0,
+                    "name":     "Nossos vendedores",
+                    "path":     "/our-sellers",
+                    "icon":     null
+                },
+                {
+                    "itemId":   1,
+                    "name":     "Fale conosco",
+                    "path":     "/contact-us",
+                    "icon":     null
+                },
+                {
+                    "itemId":   2,
+                    "name":     "Telefones",
+                    "path":     "/phones",
+                    "icon":     null
+                }
+            ]
+        },
+        {
+            "id":       4,
+            "header":   "Grupo Atacado Games",
+            "items": [
+                {
+                    "itemId":   0,
+                    "name":     "Site Atacado Collections",
+                    "path":     "https://www.atacadocollections.com/",
+                    "icon":     null
+                },
+                {
+                    "itemId":   1,
+                    "name":     "Site Gaba Hobby",
+                    "path":     "http://www.gabahobby.com/",
+                    "icon":     null
+                },
+                {
+                    "itemId":   2,
+                    "name":     "Blog informativo",
+                    "path":     "/blog",
+                    "icon":     null
+                }
+            ]
+        },
+        {
+            "id":       5,
+            "header":   "Redes Sociais",
+            "items": [
+                {
+                    "itemId":   0,
+                    "name":     "Facebook",
+                    "path":     "https://facebook.com/AtacadoGames/",
+                    "icon":     "FacebookIcon"
+                },
+                {
+                    "itemId":   1,
+                    "name":     "Instagram",
+                    "path":     "https://www.instagram.com/atacadogames/",
+                    "icon":     "InstagramIcon"
+                },
+                {
+                    "itemId":   2,
+                    "name":     "Twitter",
+                    "path":     "https://twitter.com/atacadogames",
+                    "icon":     "TwitterIcon"
+                },
+                {
+                    "itemId":   3,
+                    "name":     "Youtube",
+                    "path":     "https://www.youtube.com/channel/UCR5IG8oeldyMfuN6sn6d5CA",
+                    "icon":     "YoutubeIcon"
+                }
+            ]
+        }]
+}

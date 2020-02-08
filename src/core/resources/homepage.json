@@ -1,0 +1,22 @@
+{
+  "sectionData": {
+      "homePage": {
+        "sliderItems": [
+          {
+            "media_url": "galaxy_s10_banner"
+          },
+          {
+            "media_url": "apple_banner"
+          },
+          {
+            "media_url": "xiaomi_mi9_banner"
+          },
+          {
+            "media_url": "galaxy_s9_banner"
+          },
+          {
+            "media_url": "xiaomi_mi8_banner"
+          }]
+        }
+  }
+}

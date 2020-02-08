@@ -1,7 +1,6 @@
 // Import Dependencies and Libraries
 import React from 'react';
-import { Navbar } from 'react-bootstrap';
-import { Button, makeStyles, Typography } from '@material-ui/core';
+import { AppBar, Button, makeStyles, Typography, Grid } from '@material-ui/core';
 
 // Icons import
 const categories        = require('./icons/shape.png');
@@ -20,7 +19,7 @@ const useStyles = makeStyles(theme => ({
     },
     icons: {
         color: 'white',
-        padding: theme.spacing(0, .5, 0, .5),
+        padding: theme.spacing(0, .5, 0, 0),
         height: 15,
         width: 22
     },
@@ -55,13 +54,19 @@ export default function NavBar(){
 
     const mapButtons = 
         btns.map((button, index) => 
-                <Button className={classes.button} key={index} ><img src={icons[index]} className={classes.icons} /><Typography variant="caption" className={classes.buttonText}>{button}</Typography></Button>
+            <Grid item xs={"auto"} key={index}>
+                <Button className={classes.button} key={index} size='large'><img src={icons[index]} className={classes.icons} alt="Fail to load resource"/><Typography variant="caption" className={classes.buttonText}>{button}</Typography></Button>
+            </Grid>
         );
     
 
     return(
-        <Navbar position="static" style={{background: '#3e5e3b', display:'flex', alignItems: 'center', alignContent: 'center', justifyContent: 'center'}} >
-            {mapButtons}
-        </Navbar>
+        <AppBar position="static" style={{background: '#3e5e3b', display:'flex', alignItems: 'center', alignContent: 'center', justifyContent: 'center'}} >
+            <Grid container spacing={0} direction='row' justify='center' alignItems='center' >
+                <React.Fragment>
+                    {mapButtons}
+                </React.Fragment>
+            </Grid>
+        </AppBar>
     );
 } 
